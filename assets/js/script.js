@@ -11,7 +11,7 @@ var taskFormHandler = function() {
         return false;
     }
 
-    formEl.requestFullscreen();
+    formEl.reset();
 
     var taskDataObj = {
         name: taskNameInput,
