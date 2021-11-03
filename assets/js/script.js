@@ -100,9 +100,6 @@ var completeEditTask = function(taskName, taskType, taskId) {
 
 var taskButtonHandler = function(event) {
 
-<<<<<<< HEAD
-    if (event.target.matches(".delete-btn")) {
-=======
     var targetEl = event.target;
 
     if (targetEl.matches(".edit-btn")) {
@@ -113,15 +110,11 @@ var taskButtonHandler = function(event) {
 
     else if (event.target.matches(".delete-btn")) {
         console.log("delete", targetEl);
->>>>>>> feature/updating-task
         var taskId = event.target.getAttribute("data-task-id");
         deleteTask(taskId);
     }
 };
 
-<<<<<<< HEAD
-var deleteTask = function(taskId) {
-=======
 var taskStatusChangeHandler = function(event) {
     console.log(event.target.value);
 
@@ -165,15 +158,10 @@ var editTask = function(taskId) {
 
 var deleteTask = function(taskId) {
     console.log(taskId);
->>>>>>> feature/updating-task
     var taskSelected = document.querySelector(".task-item[data-task-id='" + taskId + "']");
     taskSelected.remove();
 };
 
-<<<<<<< HEAD
-
-=======
->>>>>>> feature/updating-task
 formEl.addEventListener("submit", taskFormHandler);
 
 pageContentEl.addEventListener("click", taskButtonHandler);
