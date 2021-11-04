@@ -123,7 +123,7 @@ var completeEditTask = function(taskName, taskType, taskId) {
             tasks[i].name = taskName;
             tasks[i].type = taskType;
         }
-    };
+    }
 
     alert("Task Updated!");
 
@@ -218,7 +218,7 @@ var saveTasks = function() {
 };
 
 var loadTasks = function() {
-    var savedTasks = localStorage.getItem("task");
+    var savedTasks = localStorage.getItem("tasks");
     if (!savedTasks) {
         return false;
     }
